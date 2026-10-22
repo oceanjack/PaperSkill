@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "paperName": "generative_modeling_via_drifting",
+  "title": "Generative Modeling via Drifting",
+  "authors": [
+    "Mingyang Deng",
+    "He Li",
+    "Tianhong Li",
+    "Yilun Du",
+    "Kaiming He"
+  ],
+  "year": 2026,
+  "venue": "arXiv",
+  "paperUrl": "https://arxiv.org/abs/2602.04770",
+  "participants": [
+    {
+      "name": "OceanJack",
+      "github": "oceanjack"
+    }
+  ],
+  "topics": [
+    "generative models",
+    "one-step generation",
+    "diffusion models"
+  ],
+  "skillVersion": "1.5.0",
+  "status": "review",
+  "entry": "index.html",
+  "version": "oceanjack1022",
+  "versionDate": "2026-10-22"
+}

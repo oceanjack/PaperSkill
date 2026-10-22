@@ -1,0 +1,324 @@
+/* 漂移模型教程：牧羊主题共用样式（仅作用于本教程模块） */
+
+.dk-page {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  gap: 22px;
+  padding: 6px 8px 8px;
+  color: var(--ppt-text, #21324a);
+  box-sizing: border-box;
+}
+
+.dk-page.two {
+  grid-template-columns: 1.32fr 0.68fr;
+}
+
+.dk-page.even {
+  grid-template-columns: 1fr 1fr;
+}
+
+.dk-page.three {
+  grid-template-columns: 1.18fr 0.62fr 0.6fr;
+}
+
+.dk-page.full {
+  grid-template-columns: 1fr;
+}
+
+.dk-scene {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  border-radius: 20px;
+  background: #fbfdf8;
+  border: 1px solid #d7deea;
+  overflow: hidden;
+}
+
+.dk-scene svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.dk-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+  min-height: 0;
+}
+
+.dk-card {
+  border: 1px solid #d7deea;
+  border-radius: 18px;
+  background: #fbfdf8;
+  padding: 18px 20px;
+  min-width: 0;
+}
+
+.dk-card-title {
+  font-size: var(--ppt-body-heading, 34px);
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 8px;
+  color: #21324a;
+}
+
+.dk-text {
+  font-size: var(--ppt-body-text, 28px);
+  line-height: 1.42;
+}
+
+.dk-muted {
+  color: #68778f;
+}
+
+.dk-big {
+  font-size: var(--ppt-body-emphasis, 44px);
+  font-weight: 750;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+
+.dk-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.dk-chip {
+  appearance: none;
+  border: 1.5px solid #c8d3e2;
+  background: #fff;
+  color: #21324a;
+  font: inherit;
+  font-size: 28px;
+  line-height: 1.15;
+  padding: 9px 15px;
+  border-radius: 12px;
+  cursor: pointer;
+  min-height: 54px;
+  transition: background 120ms ease, border-color 120ms ease, color 120ms ease;
+}
+
+.dk-chip:hover:not(:disabled) {
+  border-color: #27446e;
+}
+
+.dk-chip[aria-pressed='true'] {
+  background: #27446e;
+  border-color: #27446e;
+  color: #fff;
+}
+
+.dk-chip:focus-visible {
+  outline: 3px solid #f07e47;
+  outline-offset: 2px;
+}
+
+.dk-chip:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.dk-btn {
+  appearance: none;
+  border: none;
+  background: #27446e;
+  color: #fff;
+  font: inherit;
+  font-size: 28px;
+  font-weight: 650;
+  padding: 12px 22px;
+  border-radius: 14px;
+  min-height: 54px;
+  cursor: pointer;
+}
+
+.dk-btn:hover:not(:disabled) {
+  background: #1e3659;
+}
+
+.dk-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.dk-btn.warm {
+  background: #f07e47;
+}
+
+.dk-btn.warm:hover:not(:disabled) {
+  background: #dc6b33;
+}
+
+.dk-btn.ghost {
+  background: #fff;
+  color: #27446e;
+  border: 1.5px solid #27446e;
+}
+
+.dk-fb {
+  font-size: var(--ppt-body-text, 28px);
+  line-height: 1.38;
+  padding: 12px 16px;
+  border-radius: 14px;
+  border: 1px solid #d7deea;
+  background: #f2f6ec;
+  color: #21324a;
+  min-height: 74px;
+  box-sizing: border-box;
+}
+
+.dk-fb.ok {
+  border-color: #a9d6be;
+  background: #eef8f1;
+}
+
+.dk-fb.warn {
+  border-color: #f0c2c9;
+  background: #fdf0f2;
+}
+
+.dk-legend {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  font-size: 28px;
+  color: #4a5b72;
+}
+
+.dk-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dk-legend i {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dk-slider {
+  width: 100%;
+  accent-color: #27446e;
+  height: 34px;
+}
+
+.dk-kv {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 28px;
+  font-variant-numeric: tabular-nums;
+  padding: 5px 0;
+  border-bottom: 1px dashed #d7deea;
+}
+
+.dk-kv:last-child {
+  border-bottom: none;
+}
+
+.dk-kv b {
+  font-size: 28px;
+  color: #27446e;
+}
+
+.dk-note {
+  font-size: 28px;
+  color: #68778f;
+  line-height: 1.35;
+}
+
+.dk-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 28px;
+  font-weight: 650;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #eef8f1;
+  color: #1b6b46;
+  border: 1px solid #a9d6be;
+}
+
+.dk-badge.warn {
+  background: #fdf0f2;
+  color: #a32b3c;
+  border-color: #f0c2c9;
+}
+
+.dk-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 28px;
+  font-variant-numeric: tabular-nums;
+}
+
+.dk-table th,
+.dk-table td {
+  text-align: left;
+  padding: 6px 8px;
+  border-bottom: 1px solid #e3e9f2;
+}
+
+.dk-table th {
+  color: #68778f;
+  font-weight: 600;
+}
+
+.dk-table tr.on td {
+  background: #fff4ec;
+}
+
+.dk-svg-label {
+  font-size: 28px;
+  fill: #4a5b72;
+  font-family: inherit;
+}
+
+.dk-svg-strong {
+  font-size: 34px;
+  font-weight: 700;
+  fill: #21324a;
+  font-family: inherit;
+}
+
+.dk-cover-panel {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 8px;
+  padding: 14px 16px;
+  box-sizing: border-box;
+}
+
+.dk-cover-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #21324a;
+  line-height: 1.15;
+}
+
+.dk-cover-note {
+  position: absolute;
+  left: 18px;
+  bottom: 10px;
+  font-size: 28px;
+  color: #4a5b72;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dk-chip,
+  .dk-btn {
+    transition: none;
+  }
+}
